@@ -1,0 +1,128 @@
+.header {
+  height: 100px;
+  position: relative;
+}
+.header-logo h1 {
+  display: none;
+}
+.header-logo {
+  background: url(../img/logo.png);
+  width: 56px;
+  height: 56px;
+  background-size: 100% 100%;
+  margin-top: 22px;
+  margin-right: 172px;
+}
+.header-menu > a {
+  height: 100px;
+  line-height: 100px;
+  padding: 0 7px;
+
+  display: inline-block;
+  font-size: 16px;
+}
+.header-submenu {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  z-index: 19;
+  display: none;
+  background: white;
+}
+.header-submenu a {
+  width: 204px;
+
+  text-align: center;
+  font-size: 12px;
+}
+
+.header-cover {
+  border-right: 1px solid #eee;
+}
+
+.header-submenu a:last-child .header-cover {
+  border-right: none;
+}
+.header-cover img {
+  width: 160px;
+  height: 110px;
+}
+.header-name {
+  margin-top: 10px;
+  color: #333;
+}
+.header-price {
+  color: #ff6700;
+}
+.header-menu:hover .header-submenu {
+  display: block;
+}
+.header-search {
+  margin-top: 25px;
+  position: relative;
+}
+.header-search input {
+  width: 245px;
+  height: 50px;
+  padding: 0 15px;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid #ccc;
+}
+.header-searchicon {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-left: none;
+  background: #fff;
+  color: #616161;
+}
+.header-searchicon .iconfont {
+  font-size: 20px;
+  color: inherit;
+}
+.header-searchicon:hover {
+  background: #ff6700;
+  color: #fff;
+  border-color: #ff6700;
+}
+.header-suggest {
+  width: 245px;
+  /* background-color: red; */
+  position: absolute;
+  display: none;
+  border: 1px solid #ff6700;
+  border-top: none;
+  top: 50px;
+  left: 0;
+}
+.header-suggest a {
+  display: block;
+  font-size: 12px;
+  padding: 0 15px;
+  height: 30px;
+  line-height: 30px;
+}
+.header-suggest a:hover {
+  background: #eee;
+}
+.header-search input:hover {
+  border-color: blue;
+}
+.header-search input:hover ~ .header-searchicon {
+  border-color: blue;
+}
+.header-search input:focus ~ .header-suggest {
+  display: block;
+}
+.header-search input:focus {
+  border-color: #ff6700;
+}
+.header-search input:focus ~ .header-searchicon {
+  border-color: #ff6700;
+}
